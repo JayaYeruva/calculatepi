@@ -5,12 +5,12 @@ pipeline {
     stages {
       stage ('give permissions') {
         steps {
-        chmod +x cal_pi.py
+        chmod +x calc_pi.py
         }
       }
         stage('calculate pi') {
             steps {
-                sh "python ./cal_pi.py > pi.out :
+                sh "python ./calc_pi.py > pi.out :
             }
         }
     }
