@@ -3,7 +3,7 @@ pipeline {
     agent any
 
     stages {
-      stage ('give permissions') {
+      stage ('Provide permissions') {
         steps {
         sh "chmod +x calc_pi.py"
         }
