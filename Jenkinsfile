@@ -8,7 +8,7 @@ pipeline {
         sh "chmod +x calc_pi.py"
         }
       }
-        stage('calculate pi') {
+        stage('Build') {
             steps {
                 sh "/usr/bin/python3 ./calc_pi.py > pi.out "
             }
